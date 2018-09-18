@@ -7,9 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="205*"/>
+            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition Width="121*"/>
+        </Grid.ColumnDefinitions>
         <Button Content="Button" HorizontalAlignment="Left" Margin="258,129,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="518,149,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="396,270,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="108,149,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="396,270,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2"/>
+        <DatePicker HorizontalAlignment="Left" Margin="138,111,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
